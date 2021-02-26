@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Player Dice Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Two Player Dice Game</h1>
+        </div>
+        <div>
+            <p id="rules"><br>Roll the dice as many times as you like.</br>
+                <br>Press hold when you want to stick with current score.</br>
+                <br>If you roll a 1 you will lose your current score
+                and your turn.</br>
+                <br>First to get to 20 wins.</br>
+            </p>
+        </div>
+        
+    </header>
+    
+    <div id="wrapper"> 
+        
+            <div class="cards">
+    <div id = "container-one">
+        <div>
+            <h1 id="playerOne">Player One</h1>
+        </div>
+        
+        <div id="playerone-current">
+            <div>
+                <p id="current-one-txt">Current Score</p>
+            </div>
+
+        <div>
+            <p id="current-one">0</p>
+        </div>
+    </div>
+        <div id="playerone-total">
+            <div>
+                <p id="total-one-txt">Total Score</p>
+            </div>
+
+        <div>
+            <p id="total-one">0</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div id ="dice-wrapper">
+        <div>
+            <h2 id="player">Player One </h2>
+        </div>
+    
+        <div>
+            <h3 id="message">Click Roll To Start</h3>
+        </div>
+
+    <div>
+        <img src="./assets/dice1.png" id = "dice">
+        </div>
+        <div id="button-wrapper">
+        <div>
+            <button id="roll">Roll</button>
+            </div>
+            <div>
+                <button id="start">Start Game</button>
+            </div>
+        <div>
+            <button id="hold">Hold</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+    <div id = "container-two">
+        <div>
+            <H1>Player Two</H1>
+        </div>
+        <div id="playertwo-current">
+            <div>
+                <p id="current-two-txt">Current Score</p>
+            </div>
+
+        <div>
+            <p id="current-two">0</p>
+        </div>
+    </div>
+        <div id="playertwo-total">
+            <div>
+                <p id="total-two-txt">Total Score</p>
+            </div>
+
+        <div>
+            <p id="total-two">0</p>
+        </div>
+    </div>
+        </div>
+        </div>
+    </div>
+    
+
+    <script src = "./game.js"></script>
+</body>
+</html>
