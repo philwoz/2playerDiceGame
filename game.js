@@ -35,6 +35,7 @@ start.addEventListener("click", () => {
     currentScore = 0
     message.innerHTML = "New Game Player One To Roll First"
     currentPlayer.innerHTML = "Player One"
+    currentPlayer.style.backgroundColor = "#9B5DE5"
     currentOne.innerHTML = currentScore
     currentTwo.innerHTML = currentScore
     totalOne.innerHTML = scoreOne
@@ -67,10 +68,12 @@ roll.addEventListener("click", () => {
         if(player == 1 ){
             player = 2
             currentPlayer.innerHTML = "Player Two"
+            currentPlayer.style.backgroundColor = "#F15BB5"
             currentOne.innerHTML = currentScore
     
         } else if (player == 2) {
             currentPlayer.innerHTML = "Player One"
+            currentPlayer.style.backgroundColor = "#9B5DE5"
             currentTwo.innerHTML = currentScore
             player = 1
             
@@ -117,6 +120,7 @@ hold.addEventListener("click", () => {
         totalOne.innerHTML = scoreOne
         player = 2
         currentPlayer.innerHTML = "Player Two"
+        currentPlayer.style.backgroundColor = "#F15BB5"
         currentOne.innerHTML = currentScore
         
     } else if (player == 2){
@@ -125,6 +129,7 @@ hold.addEventListener("click", () => {
         totalTwo.innerHTML = scoreTwo
         player = 1
         currentPlayer.innerHTML = "Player One"
+        currentPlayer.style.backgroundColor = "#9B5DE5"
         currentTwo.innerHTML = currentScore
         
     }
