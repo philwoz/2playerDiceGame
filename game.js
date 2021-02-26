@@ -86,10 +86,10 @@ roll.addEventListener("click", () => {
         message.innerHTML = "you win!"
         if(player == 1){
             currentOne.innerHTML = currentScore
-            
+            totalOne.innerHTML = totalScore
         } else if (player == 2){
             currentTwo.innerHTML = currentScore
-            
+            totalTwo.innerHTML = totalScore
         }
         start.innerHTML = "Start new Game"
     } else if(totalScore < 20){
@@ -97,10 +97,12 @@ roll.addEventListener("click", () => {
            
             message.innerHTML = `Hold or Roll again?`
             currentOne.innerHTML = currentScore
+            
         } else if (player == 2){
             
             message.innerHTML = `Hold or Roll again?`
             currentTwo.innerHTML = currentScore
+            
         }
 
 }
