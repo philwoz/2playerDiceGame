@@ -34,6 +34,7 @@ start.addEventListener("click", () => {
     player = 1
     currentScore = 0
     message.innerHTML = "New Game Player One To Roll First"
+    currentPlayer.innerHTML = "Player One"
     currentOne.innerHTML = currentScore
     currentTwo.innerHTML = currentScore
     totalOne.innerHTML = scoreOne
