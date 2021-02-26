@@ -78,12 +78,15 @@ display: flex;
 #button-wrapper {
     display: flex;
     flex-direction: row;
+    
 }
 
 #start {
     background-color:#F15BB5;
     color: #FEE440;
     border: none;
+    height: 30px;
+    border-radius: 5px;
 
 }
 
@@ -91,6 +94,9 @@ button {
     background-color:#9B5DE5;
     color: #00F5D4;
     border: none;
+    height: 30px;
+    border-radius: 5px;
+    
 }
 img {
     
